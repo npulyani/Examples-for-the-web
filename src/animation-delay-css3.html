@@ -3,73 +3,121 @@
 <html>
   <head>
     <title>Animation-delay</title>
-    
-    <script type="text/javascript">
-      function changeSeconds(){
-      var secString = seconds.value();
-      document.getElementById("cir").style.MozAnimationDelay = secString;
-      
-      }
-    </script>
-    
     <style type="text/css">
-      input:focus {
-           box-shadow: 0px 0px 5px #8888aa;	   
-           -moz-box-shadow: 0px 0px 5px #8888aa;
-           -webkit-box-shadow: 0px 0px 5px #8888aa;
-      }
-
-      #cir{
+      #cir1{
            background: #6699FF;
            width: 50px;
            height: 50px;
            position: relative;
            border-radius: 25px;
-           animation-name: circleAnim;
+           animation-name: circleAnim1;
            animation-duration: 5s;
            animation-timing-function:linear;
-           animation-iteration-count:infinite;
+           animation-delay: 2s;
+           animation-iteration-count:1;
            animation-direction: alternate;
            animation-play-state: running;
            -moz-border-radius: 25px;
-           -moz-animation-name: circleAnim;
+           -moz-animation-name: circleAnim1;
            -moz-animation-duration:5s;
            -moz-animation-timing-function:linear;
-           -moz-animation-delay: 3s;
-           -moz-animation-iteration-count: infinite;
+           -moz-animation-delay: 2s;
+           -moz-animation-iteration-count: 1;
            -moz-animation-play-state: running
            -webkit-border-radius: 25px;
-           -webkit-animation-name: circleAnim;
+           -webkit-animation-name: circleAnim1;
            -webkit-animation-duration:5s;
            -webkit-animation-timing-function:linear;
-           -webkit-animation-iteration-count: infinite;
+           -webkit-animation-delay: 2s;
+           -webkit-animation-iteration-count: 1;
            -webkit-animation-play-state: running
       } 
-      @keyframes circleAnim{
-      0%   {background:#69f; left:0px; top:0px; width:150px;height:150px; border-radius: 75px;}
-      25%  {background:yellow; left:400px; top:0px; width:150px;height:150px; border-radius: 75px;}
-      50%  {background:red; left:400px; top:400px; width:200px;height:200px; border-radius: 100px;}
-      75%  {background:green; left:0px; top:400px; width:150px;height:150px; border-radius: 75px;}
+      
+      
+
+      #cir2{
+           background: #6699FF;
+           width: 50px;
+           height: 50px;
+           position: relative;
+           border-radius: 25px;
+           animation-name: circleAnim1;
+           animation-duration: 5s;
+           animation-timing-function:linear;
+           animation-delay: 9s;
+           animation-iteration-count: 1;
+           animation-direction: alternate;
+           animation-play-state: running;
+           -moz-border-radius: 25px;
+           -moz-animation-name: circleAnim1;
+           -moz-animation-duration:5s;
+           -moz-animation-timing-function:linear;
+           -moz-animation-delay: 9s;
+           -moz-animation-iteration-count: 1;
+           -moz-animation-play-state: running
+           -webkit-border-radius: 25px;
+           -webkit-animation-name: circleAnim1;
+           -webkit-animation-duration:5s;
+           -webkit-animation-timing-function:linear;
+           -webkit-animation-delay: 9s;
+           -webkit-animation-iteration-count: 1;
+           -webkit-animation-play-state: running
+      } 
+
+
+      #cir3{
+           background: #6699FF;
+           width: 50px;
+           height: 50px;
+           position: relative;
+           border-radius: 25px;
+           animation-name: circleAnim1;
+           animation-duration: 15s;
+           animation-timing-function:linear;
+           animation-iteration-count: 2;
+           animation-delay: 15s;
+           animation-direction: alternate;
+           animation-play-state: running;
+           -moz-border-radius: 25px;
+           -moz-animation-name: circleAnim1;
+           -moz-animation-duration:5s;
+           -moz-animation-timing-function:linear;
+           -moz-animation-delay: 15s;
+           -moz-animation-iteration-count: 2;
+           -moz-animation-play-state: running
+           -webkit-border-radius: 25px;
+           -webkit-animation-name: circleAnim1;
+           -webkit-animation-duration:5s;
+           -webkit-animation-timing-function:linear;
+           -webkit-animation-delay: 15s;
+           -webkit-animation-iteration-count: 2;
+           -webkit-animation-play-state: running
+      } 
+
+      @keyframes circleAnim1{
+      0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      25%  {background:yellow; left:300px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
+      75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
       100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
       }
       
-      @-moz-keyframes circleAnim{
-      0%   {background:#69f; left:0px; top:0px; width:150px;height:150px; border-radius: 75px;}
-      25%  {background:yellow; left:400px; top:0px; width:150px;height:150px; border-radius: 75px;}
-      50%  {background:red; left:400px; top:400px; width:200px;height:200px; border-radius: 100px;}
-      75%  {background:green; left:0px; top:400px; width:150px;height:150px; border-radius: 75px;}
+      @-moz-keyframes circleAnim1{
+      0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      25%  {background:yellow; left:300px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
+      75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
       100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
       }
 
       
-      @-webkit-keyframes circleAnim{
-      0%   {background:#69f; left:0px; top:0px; width:150px;height:150px; border-radius: 75px;}
-      25%  {background:yellow; left:400px; top:0px; width:150px;height:150px; border-radius: 75px;}
-      50%  {background:red; left:400px; top:400px; width:200px;height:200px; border-radius: 100px;}
-      75%  {background:green; left:0px; top:400px; width:150px;height:150px; border-radius: 75px;}
+      @-webkit-keyframes circleAnim1{
+      0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      25%  {background:yellow; left:300px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
+      75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
       100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
-      }
-      
+      }       
     </style>
   </head>
 
@@ -80,16 +128,11 @@
     <p>animation-delay is used to change time of start. It is in seconds and its
        initial value is 0s which means animation will start as soon as it starts.
     </p>
-    <cite>Note: Here the animation-delay is 3s so animation will start in 3 seconds</cite><br />
-
-    <!--
-    <form>
-      Animation-delay:  <input type="text" name="seconds" size="15" maxlength="3" value="0" /><br />
-      <input type="button" value="Change" onclick="changeSeconds()" />
-    </form><br /><br />
-    -->
-    <div id="cir"></div>
-    
+    <cite>Note: Here the animation-delay is 2s, 9s, and 15s so animation will start in 3sec, 5sec and 10sec</cite><br />
+    <div id="cir1"></div>
+    <div id="cir2"></div>
+    <div id="cir3"></div>
+        
     
   </body>
 </html>
