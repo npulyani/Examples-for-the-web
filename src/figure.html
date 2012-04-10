@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- Author: Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+  <head>
+    <title>&ltfigure&gt and &ltfigcaption&gt</title>
+  </head>
+  
+  <body>
+    <h1>Image using figure</h1>
+    <p>A basic &ltfigure&gt and &ltfigcaption&gt example using images</p>
+    <figure>
+      <figcaption>Fig1. MDN Logo</figcaption>
+      <img src="https://developer.mozilla.org/skins/mdn/Transitional/img/mdn-logo-sm.png" alt="MDN Logo" />
+    </figure>
+    <hr />
+
+    <h1>Code using figure</h1>
+    <p>An example to demonstrate the use of figure and figcaption with code</p>
+    <figure>
+      <figcaption>Get browser details using navigator</figcaption>
+      <pre>
+        function NavigatorExample(){
+        var txt;
+        txt = "Browser CodeName: " + navigator.appCodeName;
+        txt+= "Browser Name: " + navigator.appName;
+        txt+= "Browser Version: " + navigator.appVersion ;
+        txt+= "Cookies Enabled: " + navigator.cookieEnabled;
+        txt+= "Platform: " + navigator.platform;
+        txt+= "User-agent header: " + navigator.userAgent;
+        }            
+      </pre>
+    </figure>
+    <hr />
+
+    <h1>Other uses of &ltfigure&gt and &ltfigcaption&gt</h1>
+    <p>Quotes, parts of poems can also be a part of figure</p>
+    <figure>
+      <figcaption><cite>Edsger Dijkstra :-</cite></figcaption>
+      <p>"If debugging is the process of removing software bugs, <br /> then programming must be the process of putting them in"<br /></p>
+    </figure>
+    <hr />
+    
+    <p>The above examples have &ltfigcaption&gt as the first element of &ltfigure&gt so now we will try it being the last element as w3c recommends it can be either first or last element of &ltfigure&gt</p>
+    <hr />
+
+    
+    <h1>Image using figure</h1>
+    <p>A basic &ltfigure&gt and &ltfigcaption&gt example using images</p>
+    <figure>
+      <img src="https://developer.mozilla.org/skins/mdn/Transitional/img/mdn-logo-sm.png" alt="MDN Logo" />
+      <figcaption>Fig1. MDN Logo</figcaption>
+    </figure>
+    <hr />
+
+    <h1>Code using figure</h1>
+    <p>An example to demonstrate the use of figure and figcaption with code</p>
+    <figure>
+      <pre>
+        function NavigatorExample(){
+        var txt;
+        txt = "Browser CodeName: " + navigator.appCodeName;
+        txt+= "Browser Name: " + navigator.appName;
+        txt+= "Browser Version: " + navigator.appVersion ;
+        txt+= "Cookies Enabled: " + navigator.cookieEnabled;
+        txt+= "Platform: " + navigator.platform;
+        txt+= "User-agent header: " + navigator.userAgent;
+        }            
+      </pre>
+      <figcaption>Get browser details using navigator</figcaption>
+    </figure>
+    <hr />
+
+    <h1>Other uses of &ltfigure&gt and &ltfigcaption&gt</h1>
+    <p>Quotes, parts of poems can also be a part of figure</p>
+    <figure>
+      <p>"If debugging is the process of removing software bugs, <br /> then programming must be the process of putting them in"<br /></p>
+      <figcaption><cite>Edsger Dijkstra</cite></figcaption>
+    </figure>
+    <hr />
+  </body>
+
+</html>
