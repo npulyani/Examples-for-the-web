@@ -129,13 +129,7 @@
            animation-play-state: running;
       } 
 
-      @keyframes circleAnim1{
-      0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
-      25%  {background:yellow; left:300px; top:0px; width:100px;height:100px; border-radius: 50px;}
-      50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
-      75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
-      100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
-      }
+     
       
       @-moz-keyframes circleAnim1{
       0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
@@ -152,7 +146,31 @@
       50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
       75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
       100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
-      }       
+      }
+
+      @-o-keyframes circleAnim1{
+      0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      25%  {background:yellow; left:300px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
+      75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
+      100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
+      }
+
+      @-ms-keyframes circleAnim1{
+      0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      25%  {background:yellow; left:300px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
+      75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
+      100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
+      }
+
+      @keyframes circleAnim1{
+      0%   {background:#69f; left:0px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      25%  {background:yellow; left:300px; top:0px; width:100px;height:100px; border-radius: 50px;}
+      50%  {background:red; left:300px; top:300px; width:200px;height:200px; border-radius: 100px;}
+      75%  {background:green; left:0px; top:300px; width:100px;height:100px; border-radius: 50px;}
+      100% {background:#69f; left:0px; top:0px; width:50px;height:50px; border-radius: 25px;}
+      }      
     </style>
   </head>
 
@@ -163,11 +181,10 @@
     <p>animation-delay is used to change time of start. It is in seconds and its
        initial value is 0s which means animation will start as soon as it starts.
     </p>
-    <cite>Note: Here the animation-delay is 2s, 9s, and 15s so animation will start in 2sec, 9sec and 15sec</cite><br />
-    <div id="cir1"></div>
-    <div id="cir2"></div>
+    <cite>Note: Here the animation-delay is 2s, 9s, and 15s so animation will start in 2sec, 9sec and 15sec</cite><br /><br />
     <div id="cir3"></div>
-        
+    <div id="cir2"></div>
+    <div id="cir1"></div>
     
   </body>
 </html>
