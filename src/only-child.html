@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+  <head>
+    <title>:Only Child</title>
+    <style type="text/css">
+      li{
+              list-style-type: disc;
+      }
+      li:only-child{
+              color:#6699ff;
+              font-style:italic;
+              list-style-type: square;
+      }
+      em{
+              background-clor: #cccccc;
+      }
+      em:only-child{
+              background-color: #6699f;
+      }
+      p:only-child{
+              background: #6699ff;
+              width: 350px;
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <h1>:Only Child</h1>
+    <p>This :only-child pseudo class represents an element that has a parent 
+      element and the parent element has and the parent element has no other 
+      child element. Its specificity is lower compared to :first-child,
+      :last-child or :nth-child(1), nth-last-child(1) but works in similar
+      fashion.
+    </p>
+    
+    <h3>Examples</h3><hr />
+    <h4>1)</hr>
+    <ol>
+      <li>First
+	<ul>
+	  <li>This is only child element</li>
+	</ul>
+      </li>
+      <li>Second
+	<ul>
+	  <li>This list has two elements</li>
+	  <li>This list has two elements</li>
+	</ul>
+      </li>
+      <li>Third
+	<ul>
+	  <li>This list has three elements</li>
+	  <li>This list has three elements</li>
+	  <li>This list has three elements</li>
+	</ul>
+      </li>
+    </ol>
+    <hr />
+    <h4>2)</h4>
+    <div>
+      <p>
+	This is a paragraph with :only-child
+      </p>
+    </div>
+    
+    <div>
+      <span>This is spanned</span> and this is a paragraph
+    </div>
+     
+    <hr />
+  </body>
+</html>
