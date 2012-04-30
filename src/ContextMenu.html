@@ -1,6 +1,7 @@
 <html>
   <head>
     <title></title>
+
     <script type="text/javascript">
       function incFont(){
       document.getElementById("fontSizing").style.fontSize="larger"; 
@@ -24,6 +25,13 @@
     </style>
   </head>
   <body contextmenu="share">
+    <menu type="context" id="share">
+      <menu label="share">
+	<menuitem label="twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Hurray! I am learning ContextMenu from MDN via Mozilla');"></menuitem>
+	<menuitem label="facebook" onclick="window.open('https://facebook.com/sharer/sharer.php?u=https://https://developer.mozilla.org/en/HTML/Element/Using_HTML_context_menus');"></menuitem>
+      </menu>
+    </menu>
+
     <h1>Context Menu</h1>
     <p>The menu appearing on right click of a mouse is called a contextmenu. 
       The contextmenu attribute is an outcome of a MouseEvent interface and the 
@@ -32,16 +40,18 @@
     <h2>Examples</h2>    
     <hr />
     <ol>
+      <li>At any point you can share the page on Twitter and facebook using the share menu from ContextMenu</li>
       <li><pre contextmenu="changeFont" id="fontSizing">You can change the font size of this text by right clicking it and choosing the right option from context menu</pre></li>
       <menu type="context" id="changeFont">
 	<menuitem label="Increase Font" onclick="incFont()"></menuitem>
 	<menuitem label="Decrease Font" onclick="decFont()"></menuitem>
       </menu>
-      <li><pre contextmenu="ChangeImage" id="changeImage">Please use contextmenu here to see various images</pre></li>
+      <li contextmenu="ChangeImage" id="changeImage">Change Images using ContextMenu</li><br />
       <img src="https://developer.mozilla.org/media/img/promote/promobutton_mdn4.png" contextmenu="ChangeImage" id="promoButton" />
       <menu type="context" id="ChangeImage">
 	<menuitem label="Change Image" onclick="changeImage()"></menuitem>
       </menu>
+
     </ol>
   </body>
 </html>
