@@ -10,13 +10,8 @@
       document.getElementById("fontSizing").style.fontSize="smaller"; 
       }
       function changeImage(){
-      var j = Math.floor((Math.random()*39)+1);
-      if (j!=0){
+      var j = Math.ceil((Math.random()*39)+1);
       document.images[0].src="https://developer.mozilla.org/media/img/promote/promobutton_mdn"+j+".png";
-      }
-      else {
-      document.images[0].src="https://developer.mozilla.org/media/img/promote/promobutton_mdn"+4+".png";
-      }
       }
     </script>
     
@@ -33,9 +28,7 @@
     </menu>
 
     <h1>Context Menu</h1>
-    <p>The menu appearing on right click of a mouse is called a contextmenu. 
-      The contextmenu attribute is an outcome of a MouseEvent interface and the 
-      id for contextmenu has to be a valid id of &lt;menu&gt; in DOM.</p>
+    <p>A Context Menu (also called as pop-up menu) is a menu that appears upon user interaction, such as a right-click. Now HTML5 allows us to customize this menu. Following are some examples that demonstrate on how to use this context menu's. Some examples do include nested menu's.
     
     <h2>Examples</h2>    
     <hr />
@@ -47,11 +40,20 @@
 	<menuitem label="Decrease Font" onclick="decFont()"></menuitem>
       </menu>
       <li contextmenu="ChangeImage" id="changeImage">Change Images using ContextMenu</li><br />
-      <img src="https://developer.mozilla.org/media/img/promote/promobutton_mdn4.png" contextmenu="ChangeImage" id="promoButton" />
+      <img src="https://developer.mozilla.org/media/img/promote/promobutton_mdn5.png" contextmenu="ChangeImage" id="promoButton" />
       <menu type="context" id="ChangeImage">
 	<menuitem label="Change Image" onclick="changeImage()"></menuitem>
       </menu>
-
     </ol>
+    <hr />
+    <h2>Explanation</h2>
+    <p>contextmenu is assigned to elements. The default action of context menu depends upon whether the element or one of its ancestors has a contextmenu assigned. The default action is set by the user agernt (browser). To use context menu, we assign the contextmenu attribute to an element and a value is given. This value has to be an id of a menu element in the DOM.</p>
+    <ol>
+      <li>To have share in  the menu item golbally we have assigned &lt;body&gt; with contextmenu="share". So our next element id DOM is a menu item with the same id as that of context menu of body</li>
+      <li>Now in the menu element, we use this as type="context". This tells the user agent that we are accessing the contextmenu. An id is set.</li>
+      <li>Inside menu we have &lt;menuitem&gt; with labels and an onclick handler. The label is what appears in the contextmenu upon the right click. And the onclink tells what action has to be performed once the menuitem is clicked. Generally this is a javascript function</li>
+      <li>To have a nested menuitem, we declare nested menu's</li>
+    </ol>
+    <hr />
   </body>
 </html>
