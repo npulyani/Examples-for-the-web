@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title></title>
+    <script type="text/javascript">
+      function incFont(){
+      document.getElementById("fontSizing").style.fontSize="larger"; 
+      }
+      function decFont(){
+      document.getElementById("fontSizing").style.fontSize="smaller"; 
+      }
+      function changeImage(){
+      var j = Math.floor((Math.random()*39)+1);
+      if (j!=0){
+      document.images[0].src="https://developer.mozilla.org/media/img/promote/promobutton_mdn"+j+".png";
+      }
+      else {
+      document.images[0].src="https://developer.mozilla.org/media/img/promote/promobutton_mdn"+4+".png";
+      }
+      }
+    </script>
+    
+    <style type="text/css">
+      
+    </style>
+  </head>
+  <body contextmenu="share">
+    <h1>Context Menu</h1>
+    <p>The menu appearing on right click of a mouse is called a contextmenu. 
+      The contextmenu attribute is an outcome of a MouseEvent interface and the 
+      id for contextmenu has to be a valid id of &lt;menu&gt; in DOM.</p>
+    
+    <h2>Examples</h2>    
+    <hr />
+    <ol>
+      <li><pre contextmenu="changeFont" id="fontSizing">You can change the font size of this text by right clicking it and choosing the right option from context menu</pre></li>
+      <menu type="context" id="changeFont">
+	<menuitem label="Increase Font" onclick="incFont()"></menuitem>
+	<menuitem label="Decrease Font" onclick="decFont()"></menuitem>
+      </menu>
+      <li><pre contextmenu="ChangeImage" id="changeImage">Please use contextmenu here to see various images</pre></li>
+      <img src="https://developer.mozilla.org/media/img/promote/promobutton_mdn4.png" contextmenu="ChangeImage" id="promoButton" />
+      <menu type="context" id="ChangeImage">
+	<menuitem label="Change Image" onclick="changeImage()"></menuitem>
+      </menu>
+    </ol>
+  </body>
+</html>
