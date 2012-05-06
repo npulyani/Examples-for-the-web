@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+	<head>
+		<title>Linear Gradient</title>
+		<style>
+		div {
+		  display: block;
+		  width: 50%;
+		  padding: 10px;
+		}
+		
+		#grad1 {
+		background-image: -moz-linear-gradient(rgb(26,198,204), rgb(102,88,204));
+		background-image: -o-linear-gradient(rgb(26,198,204), rgb(102,88,204));
+		background-image: -webkit-linear-gradient(rgb(26,198,204), rgb(102,88,204));
+		background-image: linear-gradient(rgb(26,198,204), rgb(102,88,204));
+
+		}
+		
+		#grad2 {
+		background-image: -moz-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		background-image: -o-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		background-image: -webkit-linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		background-image: linear-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		}
+
+		#grad3 {
+		background-image: -moz-repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		background-image: -webkit-repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		background-image: -o-repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		background-image: repeating-linear-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		}
+		</style>
+	</head>
+	<body>
+	  <h1>Linear Gradient</h1>
+	  <hr />
+
+	  <h1>Examples</h1>
+	  <hr />
+	  <ol>
+	    <li></li>
+	    <div id="grad1">
+	      <h2>Simple Linear gradient </h2>
+	    </div>
+	    <hr />
+	    <li></li>
+	    <div id="grad2">
+	      <h2>Transparent Gradient</h2>
+	    </div>
+	    <hr />
+	    <li></li>	  
+	    <div id="grad3">
+	      <h2>repeating gradient</h2>
+	    </div>
+	    </ol>
+	</body>
+</html>
