@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+  <head>
+    <title>:Nth Child</title>
+    <style type="text/css">
+      li li{
+      list-style-type: disc;
+      }
+      li:nth-child(2){
+      color:#6699ff;
+      font-style:italic;
+      list-style-type: square;
+      }
+      em{
+      background-clor: #cccccc;
+      }
+      em:nth-child(2){
+      background-color: #6699ff;
+      }
+      p:nth-child(2){
+      background: #6699ff;
+      width: 350px;
+      }
+      i:nth-child(2)
+      {
+      color:red;
+      } 
+    </style>
+  </head>
+
+  <body>
+    <h1>:Nth Child</h1>
+    
+    <h3>Examples</h3><hr />
+    <h4>1)</h4>
+    <ol>
+      <li>Nth
+	<ul>
+	  <li>This is first child element</li>
+	</ul>
+      </li>
+      <li>Second
+	<ul>
+	  <li>This list has two elements</li>
+	  <li>This list has two elements</li>
+	</ul>
+      </li>
+      <li>Third
+	<ul>
+	  <li>This list has three elements</li>
+	  <li>This list has three elements</li>
+	  <li>This list has three elements</li>
+	</ul>
+      </li>
+    </ol>
+    <hr />
+
+    <h4>2)</h4>
+    <div>
+      <p>This paragraph is nth-child(1)</p>
+      <p>This paragraph is nth-child(2)</p>
+      <p>This paragraph is nth-child(3)</p>
+    </div> 
+    <hr />
+
+    <h4>3)</h4>
+      <p>I am a learning <i>nth-child(2)</i> from <i>MDN</i>
+    <hr />
+
+  </body>
+</html>
