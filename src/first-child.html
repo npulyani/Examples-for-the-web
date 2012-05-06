@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+  <head>
+    <title>:First Child</title>
+    <style type="text/css">
+      li li{
+              list-style-type: disc;
+      }
+      li:first-child{
+              color:#6699ff;
+              font-style:italic;
+              list-style-type: square;
+      }
+      em{
+              background-clor: #cccccc;
+      }
+      em:first-child{
+              background-color: #6699ff;
+      }
+      p:first-child{
+              background: #6699aa;
+              width: 350px;
+      }
+      p > i:first-child
+      {
+      color:red;
+      } 
+      div#fchild p:first-child i
+      {
+      color:yellow;
+      } 
+
+    </style>
+  </head>
+
+  <body>
+    <h1>:First Child</h1>
+    <p>This :first-child pseudo class represents an element that has a parent 
+      element and the parent element has and the parent element has no other 
+      child element. Its specificity is lower compared to :first-child,
+      :last-child or :nth-child(1), nth-last-child(1) but works in similar
+      fashion.
+    </p>
+    
+    <h3>Examples</h3><hr />
+    <h4>1)</h4>
+    <ol>
+      <li>First
+	<ul>
+	  <li>This is first child element</li>
+	</ul>
+      </li>
+      <li>Second
+	<ul>
+	  <li>This list has two elements</li>
+	  <li>This list has two elements</li>
+	</ul>
+      </li>
+      <li>Third
+	<ul>
+	  <li>This list has three elements</li>
+	  <li>This list has three elements</li>
+	  <li>This list has three elements</li>
+	</ul>
+      </li>
+    </ol>
+    <hr />
+
+    <h4>2)</h4>
+    <div>
+      <p>
+	This is a paragraph with :first-child
+      </p>
+    </div> 
+    <hr />
+
+    <h4>3)</h4>
+    <div id="fchild">
+      <p>I am a learning <i>first-child</i> from <i>MDN</i>
+    </div> 
+    <hr />
+
+    <h4>4)</h4>
+    <p>I am a learning <i>first-child</i> from <i>MDN</i>
+
+    <hr />
+  </body>
+</html>
