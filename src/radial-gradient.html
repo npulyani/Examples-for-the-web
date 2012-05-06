@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+	<head>
+		<title>Radial Gradient</title>
+		<style>
+		div {
+		  display: block;
+		  width: 50%;
+		  padding: 10px;
+		}
+		
+		#grad1 {
+		background-image: -moz-radial-gradient(rgb(26,198,204), rgb(102,88,204));
+		background-image: -o-radial-gradient(rgb(26,198,204), rgb(102,88,204));
+		background-image: -webkit-radial-gradient(rgb(26,198,204), rgb(102,88,204));
+		background-image: radial-gradient(rgb(26,198,204), rgb(102,88,204));
+
+		}
+		
+		#grad2 {
+		background-image: -moz-radial-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		background-image: -o-radial-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		background-image: -webkit-radial-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		background-image: radial-gradient(top left,rgba(26,198,204,0.5), rgba(102,88,204,0.53));
+		}
+
+		#grad3 {
+		background-image: -moz-repeating-radial-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		background-image: -webkit-repeating-radial-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		background-image: -o-repeating-radial-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		background-image: repeating-radial-gradient(180deg,rgb(26,198,204),rgb(26,198,204) 7%, rgb(100,100,100) 10%);
+		}
+		</style>
+	</head>
+	<body>
+	  <h1>Radial Gradient</h1>
+	  <hr />
+
+	  <h1>Examples</h1>
+	  <hr />
+	  <ol>
+	    <li></li>
+	    <div id="grad1">
+	      <h2>Simple Radial gradient </h2>
+	    </div>
+	    <hr />
+	    <li></li>
+	    <div id="grad2">
+	      <h2>Transparent Gradient</h2>
+	    </div>
+	    <hr />
+	    <li></li>	  
+	    <div id="grad3">
+	      <h2>repeating gradient</h2>
+	    </div>
+	    </ol>
+	</body>
+</html>
