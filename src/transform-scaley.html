@@ -15,9 +15,17 @@
 		{
 			transform:scaleY(-1);
 			-ms-transform:scaleY(-1);
-			-moz-transform:scaleY(-1);
+			-moz-transform:scale(-1);
 			-webkit-transform:scaleY(-1);
 			-o-transform:scaleY(-1);
+		}
+		div#scaleYDivHover:hover
+		{
+			transform:scaleY(-1.2);
+			-ms-transform:scaleY(-1.2);
+			-moz-transform:scale(-1.2);
+			-webkit-transform:scaleY(-1.2);
+			-o-transform:scaleY(-1.2);
 		}
 		</style>
 	</head>
@@ -25,9 +33,10 @@
 		<h1>ScaleY</h1>
 		<hr	/>
 		<ul type="square">
-			<li><div>This is normal text</div></li><br />
+			<li><div>This is normal text</div><br /></li>
 			<li><div id="scaleYDiv"><span>This is inverted text</span>transform:scaleY(-1);<br />-ms-transform:scaleY(-1);<br />-moz-transform:scaleY(-1);<br />-webkit-transform:scaleY(-1);
-			-o-transform:scaleY(-1);<pre></pre></div></li>	
+			-o-transform:scaleY(-1);</div><br /> </li>	
+			<li><div id="scaleYDivHover">Hover over the text to scale(-1.2)</div></li>
 		</ul>
 		
 	</body>

@@ -19,6 +19,14 @@
 			-webkit-transform:scaleX(-1);
 			-o-transform:scaleX(-1);
 		}
+		div#scaleXDivHover:hover
+		{
+			transform:scaleX(-1.2);
+			-ms-transform:scaleX(-1.2);
+			-moz-transform:scaleX(-1.2);
+			-webkit-transform:scaleX(-1);
+			-o-transform:scaleX(-1.2);
+		}
 		</style>
 	</head>
 	<body>
@@ -27,7 +35,8 @@
 		<ul type="square">
 			<li><div>This is normal text</div></li><br />
 			<li><div id="scaleXDiv"><span>This is inverted text</span>transform:scaleX(-1);<br />-ms-transform:scaleX(-1);<br />-moz-transform:scaleX(-1);<br />-webkit-transform:scaleX(-1);
-			-o-transform:scaleX(-1);<pre></pre></div></li>	
+			-o-transform:scaleX(-1);</div><br /></li>
+			<li><div id="scaleXDivHover">Hover over the text to see the effect scale(1.2)</div></li>	
 		</ul>
 		
 	</body>
