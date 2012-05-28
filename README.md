@@ -19,3 +19,9 @@ Authors
 -------
 
 [Vikash Agrawal](mailto:vikashagrawal1990@gmail.com>)
+
+
+Remember
+-------- 
+
+[!Validated HTML](/img/invalid.png)
