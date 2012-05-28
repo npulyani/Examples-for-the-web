@@ -24,4 +24,4 @@ Authors
 Remember
 -------- 
 
-![Validated HTML](https://github.com/ivikash/Examples-for-the-web/blob/master/img/invalid.png)
+![Validated HTML](https://github.com/ivikash/Examples-for-the-web/raw/master/img/invalid.png)
