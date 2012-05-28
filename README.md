@@ -15,4 +15,4 @@ You can just clone the [project](https://github.com/ivikash/Examples-for-the-web
  
 __Authors__
 
-[Vikash Agrawal](vikashagrawal1990@gmail.com>)
+[Vikash Agrawal](mailto:vikashagrawal1990@gmail.com>)
