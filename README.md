@@ -24,4 +24,4 @@ Authors
 Remember
 -------- 
 
-[!Validated HTML](/img/invalid.png)
++![Validated HTML](/img/invalid.png)
