@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Author: Vikash Agrawal <vikashagrawal1990@gmail.com -->
+<html>
+	<head>
+		<title>transform-rotate</title>
+		
+		<style type="text/css">
+			div#transformDiv
+			{
+				display: block;
+				max-width: 6.1em;
+				background: #6699FF;
+				
+			}
+			#sampleDate
+			{
+				display: block;
+				font-size: 3em;
+				height: inherit;
+			}
+			#sampleMonth
+			{
+				display: block;
+				font-size: 1.8em;
+				
+			}
+			#sampleYear
+			{
+				font-size: 1.3em;
+				position: relative;
+				float: right;
+				top: -4.5em;
+				-moz-transform: rotate(-90deg);		
+			}
+			#transformIframe
+			{
+					-moz-transform: rotate(50deg);		
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<h1>Transform-Rotate</h1>
+		<hr />
+		<h2>Examples</h2>
+		<p>1)</p>
+				<div id="transformDiv">
+					<span id="sampleDate">31</span>
+					<span id="sampleMonth">MAY</span><br /> 
+					<span id="sampleYear">2012</span>
+				</div><br /><br /><br /><br />
+			
+		<p>2)</p>
+		<iframe id="transformIframe" src="https://developer.mozilla.org/en/" width="450" height="300">Error 404</iframe>
+	</body>
+	
+</html>
