@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+	<head>
+		<title>Scale-X</title>
+		<style type="text/css"> 
+		div
+		{
+			width:350px;
+			height:200px;
+			background-color:#6699FF;
+			border:1px solid black;
+		}
+		div#scaleDiv
+		{
+			transform:scale(0.9,0.9);
+			-ms-transform:scale(0.9,0.9);
+			-moz-transform:scale(0.9,0.9);
+			-webkit-transform:scale(0.9,0.9);
+			-o-transform:scale(0.9,0.9);
+		}
+		div#scaleDivHover:hover
+		{
+			transform:scale(1.2,2);
+			-ms-transform:scale(1.2,2);
+			-moz-transform:scale(1.2,2.5) ;
+			-webkit-transform:scale(1.2,2);
+			-o-transform:scale(1.2,2);
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Scale</h1>
+		<hr	/>
+		<ul type="square">
+			<li><div>This is normal text</div></li><br />
+			<li><div id="scaleDiv"><span>This is inverted text</span>transform:scale(0.9,0.9);<br />-ms-transform:scale(0.9,0.9);<br />-moz-transform:scale(0.9,0.9);<br />-webkit-transform:scale(0.9,0.9);
+			-o-transform:scale(0.9,0.9);</div><br /></li>
+			<li><div id="scaleDivHover">Hover over the text to see the effect scale(1.2,2)</div></li>	
+		</ul>
+	</body>
+</html>
+
+
