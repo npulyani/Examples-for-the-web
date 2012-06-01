@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+	<head>
+		<title>Transform Rotate3D</title>
+		<style>
+          #asd
+          {
+            -webkit-perspective: 800; perspective: 800; margin: 100px 0 100px 50px;
+          }
+			#TRotate3D
+			{
+				-moz-transform: rotate3d(0, 1, 1, 30deg);
+				-webkit-transform: rotate3d(-1, 1, 1, 30deg); 
+				-o-transform: rotate3d(0, 1, 1, 30deg);
+				-ms-transform: rotate3d(0, 1, 1, 30deg);
+				transform: rotate3d(0, 1, 1, 30deg);
+			}
+			#TRotate3DHover:hover	
+			{
+				-moz-transform: rotate3d(0, 1, 1, -30deg);
+				-webkit-transform: rotate3d(1, -1, 1, -45deg); 
+				-o-transform: rotate3d(0, 1, 1, -30deg);
+				-ms-transform: rotate3d(0, 1, 1, -30deg);
+				transform: rotate3d(0, 1, 1, -30deg);
+			}
+		</style>	
+	</head>	
+	
+	<body>
+		<h1>Transform Rotate 3D</h1>
+		<hr />
+		<h2>Example</h2>
+		<p>1)</p>
+      <div id="asd"><iframe  src="http://developer.mozilla.org/en" id="TRotate3D"><p>This is not supported by your browser</p></iframe><br /><br />
+         </div>
+		<p>2)</p>
+      <iframe  src="http://developer.mozilla.org/en" id="TRotate3DHover"><p>This is not supported by your browser</p></iframe>
+     
+	</body>
+</html>
