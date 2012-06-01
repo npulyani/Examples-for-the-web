@@ -24,6 +24,25 @@
 				-ms-transform: rotate3d(0, 1, 1, -30deg);
 				transform: rotate3d(0, 1, 1, -30deg);
 			}
+			#box1
+			{
+				background: #FF0000;
+				width: 10em;
+				height: 10em;
+				border-style: dashed;
+			}
+			#box2
+			{
+				background: #6699FF;
+				width: 10em;
+				height: 10em;
+				border-style:inset;
+				transform:rotate3d(1,1,1,80deg);
+				-ms-transform:rotate3d(1,1,1,80deg);
+				-moz-transform:rotate3d(1,1,1,80deg);
+				-webkit-transform:rotate3d(1,1,1,80deg) ;
+				-o-transform:rotate3d(1,1,1,80deg);
+			}
 		</style>	
 	</head>	
 	
@@ -36,6 +55,13 @@
          </div>
 		<p>2)</p>
       <iframe  src="http://developer.mozilla.org/en" id="TRotate3DHover"><p>This is not supported by your browser</p></iframe>
-     
+    	<br /><br />
+		<p>3)</p> 
+ 		<div id="box1">
+ 			This is box1 with no rotate3D
+ 		</div>
+ 		<div id="box2">
+ 			This is box2 and has rotate3D
+ 		</div>
 	</body>
 </html>
