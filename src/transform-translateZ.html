@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- Author: Vikash Agrawal <vikashagrawal1990@gmail.com -->
+<html>
+  	<head>	
+	    <title>Transform-TranslateZ</title>
+	    <style type="text/css">
+	    	#DivFirst
+	    	{
+	    		background-color: #6699FF;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: groove;
+	    		-moz-transform: TranslateZ(-100px);
+	    		-webkit-transform: TranslateZ(-100px);
+	    		-o-transform: TranslateZ(-100px);
+	    		-ms-transform: TranslateZ(-100px);
+	    		transform: TranslateZ(-100px);
+	    	}
+			#DivSecond
+	    	{
+	    		background-color: #6699FF;
+	    		width: 150px;
+	    		height: 150px;
+	    		border-style: solid;
+	    		position: absolute;
+	    	}
+	    	#DivThird
+	    	{
+	    		background-color: #00FF00;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: dashed;
+	    		position: relative;
+	    		-moz-transform: TranslateZ(100px);
+	    		-webkit-transform: TranslateZ(100px);
+	    		-o-transform: TranslateZ(100px);
+	    		-ms-transform: TranslateZ(100px);
+	    		transform: TranslateZ(100px);
+	    	}	    
+	    
+	    </style>	
+	 </head>				
+
+	<body>
+		<h1>Transform-TranslateZ</h1>
+		<hr />
+		<h2>Examples</h2>
+		<br /><br />
+		<ol>
+			<li><div id="DivFirst">This is the first div</div><br /></li>
+			<li><div id="DivSecond">This is the new div</div><div id="DivThird">This div is overlapped over another div </div></li>
+		</ol>
+	</body>
+</html>
