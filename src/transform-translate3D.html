@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Author: Vikash Agrawal <vikashagrawal1990@gmail.com -->
+<html>
+  	<head>	
+	    <title>Transform-Translate3d</title>
+	    <style type="text/css">
+	    	#DivFirst
+	    	{
+	    		background-color: #6699FF;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: groove;
+	    		-moz-transform: Translate3d(120px,-50px,-200px);
+	    		-webkit-transform: Translate3d(120px,-50px,-200px);
+	    		-o-transform: Translate3d(120px,-50px,-200px);
+	    		-ms-transform: Translate3d(120px,-50px,-200px);
+	    		transform: Translate3d(120px,-50px,-200px);
+	    	}
+			#DivSecond
+	    	{
+	    		background-color: #6699FF;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: solid;
+	    		position: absolute;
+	    	}
+	    	#DivThird
+	    	{
+	    		background-color: #00FF00;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: dashed;
+	    		position: relative;
+	    		-moz-transform: Translate3d(110px,-60px,-120px);
+	    		-webkit-transform: Translate3d(110px,-60px,-120px);
+	    		-o-transform: Translate3d(110px,-60px,-120px);
+	    		-ms-transform: Translate3d(110px,-60px,-120px);
+	    		transform: Translate3d(110px,-60px,-120px);
+	    	}	    
+	    
+	    </style>	
+	 </head>				
+
+	<body>
+		<h1>Transform-Translate3d</h1>
+		<hr />
+		<h2>Examples</h2>
+		<ol>
+			<li><div id="DivFirst">This is the first div</div><br /></li>
+			<li><div id="DivSecond">This is the new div</div><div id="DivThird">This is an overlapping div</div></li>
+		</ol>
+	</body>
+</html>
