@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Author:- Vikash Agrawal <vikashagrawal1990@gmail.com> -->
+<html>
+	<head>
+		<title>Transform-perspective</title>
+		<style>
+	    	#DivFirst
+	    	{
+	    		background-color: #FF0000;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: solid;
+	    		-moz-transform: perspective( 100px ) rotateX( 20deg );
+	    		-webkit-transform: perspective( 100px ) rotateX( 20deg );
+	    		-o-transform: perspective( 100px ) rotateX( 20deg );
+	    		-ms-transform: perspective( 100px ) rotateX( 20deg );
+	    		-transform: perspective( 100px ) rotateX( 20deg );
+	    	}
+		#DivSecond
+	    	{
+	    		background-color: #6699FF;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: solid;
+	    		-moz-transform: perspective( 600px ) rotateY( 45deg );
+	    		-webkit-transform: perspective( 600px ) rotateY( 45deg );
+	    		-o-transform: perspective( 600px ) rotateY( 45deg );
+	    		-ms-transform: perspective( 600px ) rotateY( 45deg );
+	    		-transform: perspective( 600px ) rotateY( 45deg );
+	    	}
+	    	#DivThird
+	    	{
+	    		background-color: #8B8378;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: solid;
+	    		-moz-transform: perspective( 500px ) rotateZ( 45deg );
+	    		-webkit-transform: perspective( 500px ) rotateZ( 45deg );
+	    		-o-transform: perspective( 500px ) rotateZ( 45deg );
+	    		-ms-transform: perspective( 500px ) rotateZ( 45deg );
+	    		-transform: perspective( 500px ) rotateZ( 45deg );
+	    	}
+	    	#DivFourth
+	    	{
+	    		background-color: #0000FF;
+	    		width: 130px;
+	    		height: 130px;
+	    		border-style: solid;
+	    		-moz-transform: perspective( 500px ) rotate3d(1,1,1,80deg);
+	    		-webkit-transform: perspective( 500px ) rotate3d(1,1,1,80deg);
+	    		-o-transform: perspective( 500px ) rotate3d(1,1,1,80deg);
+	    		-ms-transform: perspective( 500px ) rotate3d(1,1,1,80deg);
+	    		-transform: perspective( 500px ) rotate3d(1,1,1,80deg);
+	    	}
+		</style>	
+	</head>	
+	<body>
+		<h1>Transform-perspective</h1>
+		<hr />
+		<h2>Examples</h2>
+		<ol>
+			<li>X-Axis <br/><div id="DivFirst">X-Axis</div></li>
+			<li>Y-Axis<br /><br /><br /><div id="DivSecond">Y-Axis</div></li>
+			<li>Z-Axiz<br /><br /><br /><div id="DivThird">Z-Axis</div></li>
+			<li>3D <br /><br /><br /><div id="DivFourth">3D</div></li>
+		</ol>
+	</body>
+</html>			
