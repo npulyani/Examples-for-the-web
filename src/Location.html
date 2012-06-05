@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>GeoLocation App</title>
+    <script type="text/javascript">
+      function geoG()
+      {
+      if (!navigator.geolocation){
+      document.getElementById("#out").innerHTML = "Geolocation is not supporte by your browser";
+      return;
+      }
+      navigator.geolocation.getCurrentPosition(function(position) {  
+      var lat = position.coords.latitude;
+      var longi = position.coords.longitude;  
+      document.getElementById("out").innerHTML = "<br />Latitude is "+lat+"<br />Longitude is "+longi+"<br /><br />";
+      
+      var myImage = new Image;
+      myImage.src = "http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+longi+"&zoom=10&size=400x400&sensor=false";
+      document.getElementById('out').appendChild(myImage);
+      myImage.align = "";
+      });
+      }
+    </script>
+    <style type="text/css">
+      body { 
+      background-color:#ffffc9;
+      }
+      #footer{
+      position:fixed;
+      left:0px;
+      bottom:0px;
+      height:30px;
+      width:100%;
+      background:#69f;
+      text-align:center;
+      font-weight:bold;
+      }
+    </style>
+  </head>
+  <body onload="geoG()">
+    <h1 style="text-align:center;">GeoLocation App</h1>
+    <h3 id="out" style="text-align:center;"><blink>Locating...</blink></h3>
+    <div id="footer">&copy;Vikash Agrawal, 2012</div>
+  </body>
+</html>
