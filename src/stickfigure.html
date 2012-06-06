@@ -4,18 +4,67 @@
         <head>
             <title>Transition</title>
             <style type="text/css">
-                #BodyNew
+                #BodyX
 				{ 
-					width: 200px;
+					width: auto;
                 	height: 200px;
 					display: block;
 					padding: 30px;
+					-moz-transition: -moz-transform 2s;
+					-webkit-transition: -webkit-transform 2s;
+					-o-transition: -o-transform 2s;
+					-ms-transition: -ms-transform 2s;
+					transition: transform 2s;
 				}
-				#BodyNew:hover
+				#BodyX:hover
 				{ 
-					display: block;
+					-moz-transform: translateX(100px);
+					-webkit-transform: translateX(100px);
+					-o-transform: translateX(100px);
+					-ms-transform: translateX(100px);
+					transform: translateX(100px);
 				}
-                #h
+                #BodyY
+				{ 
+					width: auto;
+                	height: 200px;
+					display: block;
+					padding: 30px;
+					-moz-transition: -moz-transform 2s;
+					-webkit-transition: -webkit-transform 2s;
+					-o-transition: -o-transform 2s;
+					-ms-transition: -ms-transform 2s;
+					transition: transform 2s;
+				}
+				#BodyY:hover
+				{ 
+					-moz-transform: translateY(100px);
+					-webkit-transform: translateY(100px);
+					-ms-transform: translateY(100px);
+					-o-transform: translateY(100px);
+					transform: translateY(100px);
+				}
+				 #Body3D
+				{ 
+					width: auto;
+                	height: 200px;
+					display: block;
+					padding: 30px;
+					-moz-transition: -moz-transform 2s;
+					-webkit-transition: -webkit-transform 2s;
+					-o-transition: -o-transform 2s;
+					-ms-transition: -ms-transform 2s;
+					transition: transform 2s;
+				}
+				#Body3D:hover
+				{ 
+					-moz-transform: translate3D(100px,-100px,100px);
+					-webkit-transform: translate3D(100px,-100px,100px);
+					-ms-transform: translate3D(100px,-100px,100px);
+					-o-transform: translate3D(100px,-100px,100px);
+					transform: translate3D(100px,-100px,100px);
+				}
+				#h
                 {
                 	width: 50px;
 				    height: 50px;
@@ -94,7 +143,8 @@
                 <h1>Stick-figure</h1>
                 <hr />        
                 <br />
-                <div id="BodyNew">
+                <h3>Transition-X</h3>
+                <div id="BodyX">
                 	<div id="h"></div>
                 	<div id="b"></div>
                 	<div id="hand1"></div>
@@ -103,5 +153,25 @@
                 	<div id="l2"></div>
                 </div>
                 
+                <h3>Transition-Y</h3>
+                <div id="BodyY">
+                	<div id="h"></div>
+                	<div id="b"></div>
+                	<div id="hand1"></div>
+                	<div id="hand2"></div>
+                	<div id="l1"></div>
+                	<div id="l2"></div>
+                </div>
+                <h3>Transition-3D</h3>
+                <div id="Body3D">
+                	<div id="h"></div>
+                	<div id="b"></div>
+                	<div id="hand1"></div>
+                	<div id="hand2"></div>
+                	<div id="l1"></div>
+                	<div id="l2"></div>
+                </div>
+                
+                <br /><br />
         </body>
 </html>
