@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Author: Vikash Agrawal <vikashagrawal1990@gmail.com -->
+<html>
+	<head>
+		<title>Canvas</title>
+		
+		
+		<style type="text/css">
+			html,body { background:#fff; height:100%; margin:0; padding:0;  }
+			canvas { background-color:#CFCFCF;}
+			
+		</style>
+	</head>
+	<body>
+		<!-- Background Canvas -->
+		
+		<canvas id="CanvasMain">
+			asdasdasd 
+			<h1>asdasd</h1>
+		</canvas>
+		<script type="text/javascript">
+ 			var ctx = document.querySelector('canvas').getContext('2d');
+ 			resizeCanvas(); //width and height set to size of browser
+ 			
+ 			function resizeCanvas() {
+			var w = document.body.offsetWidth,
+			    h = document.body.offsetHeight-2;
+				ctx.canvas.width  = w;
+				ctx.canvas.height = h;
+				ctx.translate(w/2,h/2);
+				ctx.strokeStyle = 'red';
+				ctx.fillStyle = 'black';
+				drawFrame();
+			}
+			
+		</script>
+		
+	</body>
+</html>
